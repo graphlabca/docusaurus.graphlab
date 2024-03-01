@@ -63,7 +63,7 @@ import plausiblePlugin from 'docusaurus-plugin-plausible';
 
 /** @type {import('@docusaurus/types').Config} */
 const config: Config = {
-  title: 'GraphLab Consulting Docs | Graphic Lab Web Services Documentation Node ',
+  title: 'GraphLab Consulting Docs',
   tagline: 'Graphic Lab Web Services Documentation Node ',
   favicon: 'img/favicon.ico',
   url: 'https://docs.graphlab.ca',
