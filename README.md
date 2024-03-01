@@ -11,6 +11,7 @@ This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 Inter
 [cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
 
 This website is built using [Docusaurus 3](https://docusaurus.io/), a modern static website generator.
+
 Compiled by Senih Ucar
 
 # Start Docker Service Script
