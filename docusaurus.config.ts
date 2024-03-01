@@ -63,13 +63,13 @@ import plausiblePlugin from 'docusaurus-plugin-plausible';
 
 /** @type {import('@docusaurus/types').Config} */
 const config: Config = {
-  title: 'Docusaurus.community',
-  tagline: 'Docusaurus community knowledge sharing and plugin directory.',
+  title: 'GraphLab Consulting Docs',
+  tagline: 'Graphic Lab Web Services Documentation Node ',
   favicon: 'img/favicon.ico',
-  url: 'https://docusaurus.community',
+  url: 'https://docs.graphlab.ca',
   baseUrl: '/',
-  organizationName: 'homotechsual', // Usually your GitHub org/user name.
-  projectName: 'docusaurus.community', // Usually your repo name.
+  organizationName: 'graphlabca', // Usually your GitHub org/user name.
+  projectName: 'docusaurus.graphlab', // Usually your repo name.
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
   i18n: {
@@ -87,7 +87,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/homotechsual/docusaurus.community/edit/main/',
+            'https://github.com/graphlabca/docusaurus.graphlab/edit/main/',
           ...commonDocsPluginConfig,
         } satisfies DocsOptions,
         blog: false,
@@ -116,7 +116,7 @@ const config: Config = {
         title: 'Docusaurus.community',
         logo: {
           alt: 'Docusaurus.community Logo',
-          src: 'img/logo.svg',
+          src: 'img/graphlab_logo.svg',
         },
         hideOnScroll: true,
         items: [
@@ -132,28 +132,21 @@ const config: Config = {
             label: 'Plugin Directory',
           },
           {
-            to: 'https://github.com/sponsors/homotechsual/',
+            to: 'https://sponsor.graphlab.ca',
             label: 'Sponsor',
             position: 'right',
             target: '_blank',
             className: 'sponsorship-link',
           },
           {
-            to: 'https://docusaurus.io',
-            label: 'Docusaurus',
-            position: 'right',
-            target: '_blank',
-            className: 'docusaurus-link',
-          },
-          {
-            to: 'https://discord.gg/docusaurus',
+            to: 'https://discord.graphlab.ca',
             label: 'Discord',
             position: 'right',
             target: '_blank',
             className: 'discord-link',
           },
           {
-            to: 'https://github.com/homotechsual/docusaurus.community',
+            to: 'https://github.graphlab.ca',
             label: 'GitHub',
             position: 'right',
             target: '_blank',
@@ -163,9 +156,9 @@ const config: Config = {
       },
       footer: {
         logo: {
-          alt: 'Docusaurus Logo',
-          src: 'img/Docusaurus.svg',
-          href: 'https://docusaurus.io',
+          alt: 'Graphlab Logo',
+          src: 'img/Graphlab.svg',
+          href: 'https://graphlab.ca',
           height: 50,
           width: 50,
         },
@@ -185,15 +178,15 @@ const config: Config = {
             items: [
               {
                 label: 'Stack Overflow',
-                to: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                to: 'https://stackoverflow.graphlab.ca',
               },
               {
                 label: 'Discord',
-                to: 'https://discordapp.com/invite/docusaurus',
+                to: 'https://discord.graphlab.ca',
               },
               {
-                label: 'Twitter',
-                to: 'https://twitter.com/docusaurus',
+                label: 'x',
+                to: 'https://x.graphlab.ca',
               },
             ],
           },
@@ -201,22 +194,18 @@ const config: Config = {
             title: 'More',
             items: [
               {
-                label: 'Docusaurus Blog',
-                to: 'https://docusaurus.io/blog',
+                label: 'Graphlab Blog',
+                to: 'https://blog.graphlab.ca',
               },
               {
-                label: 'Docusaurus GitHub',
-                to: 'https://github.com/facebook/docusaurus',
-              },
-              {
-                label: 'Community GitHub',
-                to: 'https://github.com/homotechsual/docusaurus.community',
+                label: 'Graphlab GitHub',
+                to: 'https://github.graphlab.ca',
               },
             ],
           },
         ],
-        copyright: `<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />Licensed by the Docusaurus community under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.<br />Built with <a href="https://docusaurus.io">Docusaurus v${DOCUSAURUS_VERSION}</a>.<br /><span class="designedBy">Designed with <svg xmlns="http://www.w3.org/2000/svg" class="heart" width="24" height="24" viewBox="0 0 24 24"><path d="M14 20.408c-.492.308-.903.546-1.192.709-.153.086-.308.17-.463.252h-.002a.75.75 0 01-.686 0 16.709 16.709 0 01-.465-.252 31.147 31.147 0 01-4.803-3.34C3.8 15.572 1 12.331 1 8.513 1 5.052 3.829 2.5 6.736 2.5 9.03 2.5 10.881 3.726 12 5.605 13.12 3.726 14.97 2.5 17.264 2.5 20.17 2.5 23 5.052 23 8.514c0 3.818-2.801 7.06-5.389 9.262A31.146 31.146 0 0114 20.408z"/></svg>
-        by <a href="https://homotechsual.dev">homotechsual</a></span>.`,
+        copyright: `<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />Licensed by the Docusaurus community under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.<br />Built with <a href="https://docusaurus.io">Docusaurus v${DOCUSAURUS_VERSION}</a>.<br /><span class="designedBy">Compiled with <svg xmlns="http://www.w3.org/2000/svg" class="heart" width="24" height="24" viewBox="0 0 24 24"><path d="M14 20.408c-.492.308-.903.546-1.192.709-.153.086-.308.17-.463.252h-.002a.75.75 0 01-.686 0 16.709 16.709 0 01-.465-.252 31.147 31.147 0 01-4.803-3.34C3.8 15.572 1 12.331 1 8.513 1 5.052 3.829 2.5 6.736 2.5 9.03 2.5 10.881 3.726 12 5.605 13.12 3.726 14.97 2.5 17.264 2.5 20.17 2.5 23 5.052 23 8.514c0 3.818-2.801 7.06-5.389 9.262A31.146 31.146 0 0114 20.408z"/></svg>
+        by <a href="https://senih.dev">senihucar</a></span>.`,
       },
       prism: {
         theme: lightCodeTheme,
@@ -250,7 +239,7 @@ const config: Config = {
         path: 'contributing',
         routeBasePath: 'contributing',
         sidebarPath: './sidebars.js',
-        editUrl: 'https://github.com/homotechsual/docusaurus.community/tree/main/',
+        editUrl: 'https://https://github.com/graphlabca/docusaurus.graphlab/tree/main/',
         ...commonDocsPluginConfig,
       } satisfies DocsOptions,
     ]
