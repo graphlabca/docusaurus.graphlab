@@ -4,13 +4,13 @@
 start_service() {
     case $1 in
         caddy)
-            docker-compose --file ./caddy.docker-compose.yml up -d --build
+            docker compose --file ./caddy.docker-compose.yml up -d --build
             ;;
         serve)
-            docker-compose --file ./serve.docker-compose.yml up -d --build
+            docker compose --file ./serve.docker-compose.yml up -d --build
             ;;
         dev)
-            docker-compose --file ./dev.docker-compose.yml up -d --build
+            docker compose --file ./dev.docker-compose.yml up -d --build
             ;;
         *)
             echo "Invalid service name. Please enter 'caddy', 'serve', or 'dev'."
