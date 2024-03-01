@@ -17,7 +17,7 @@ WORKDIR /opt/docusaurus
 ## Expose the port that Docusaurus will run on.
 EXPOSE 3000
 ## Run the development server.
-CMD [ -d "node_modules" ] && yarn start || yarn install && yarn start --host 0.0.0.0
+CMD [ -d "node_modules" ] && pnpm start || pnpm install && pnpm start --host 0.0.0.0
 
 # Stage 2b: Production build mode.
 FROM base as prod
@@ -25,17 +25,17 @@ FROM base as prod
 WORKDIR /opt/docusaurus
 ## Copy over the source code.
 COPY . /opt/docusaurus/
-## Install dependencies with `--immutable` to ensure reproducibility.
-RUN yarn install --immutable
+## Install dependencies with `--frozen-lockfile` to ensure reproducibility.
+RUN pnpm install --frozen-lockfile
 ## Build the static site.
-RUN yarn build
+RUN pnpm build
 
 # Stage 3a: Serve with `docusaurus serve`.
 FROM prod as serve
 ## Expose the port that Docusaurus will run on.
 EXPOSE 3000
 ## Run the production server.
-CMD ["yarn", "serve", "--host", "0.0.0.0", "--no-open"]
+CMD ["pnpm", "serve", "--host 0.0.0.0", "--no-open"]
 
 # Stage 3b: Serve with Caddy.
 FROM caddy:2-alpine as caddy
