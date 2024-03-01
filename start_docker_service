@@ -1,0 +1,42 @@
+#!/bin/bash
+
+# Function to start Docker Compose based on the provided service name
+start_service() {
+    case $1 in
+        caddy)
+            docker-compose --file ./caddy.docker-compose.yml up -d --build
+            ;;
+        serve)
+            docker-compose --file ./serve.docker-compose.yml up -d --build
+            ;;
+        dev)
+            docker-compose --file ./dev.docker-compose.yml up -d --build
+            ;;
+        *)
+            echo "Invalid service name. Please enter 'caddy', 'serve', or 'dev'."
+            ;;
+    esac
+}
+
+# Prompt the user to select a service or provide a service name
+echo "Select a service or enter its name:"
+echo "1. Caddy"
+echo "2. Serve"
+echo "3. Dev"
+read -p "Enter your choice or service name: " choice
+
+# Check if the choice is numerical or textual and execute the corresponding action
+case $choice in
+    1 | caddy)
+        start_service caddy
+        ;;
+    2 | serve)
+        start_service serve
+        ;;
+    3 | dev)
+        start_service dev
+        ;;
+    *)
+        echo "Invalid choice. Please enter a valid option (1/2/3) or service name (caddy/serve/dev)."
+        ;;
+esac
